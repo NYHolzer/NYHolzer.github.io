@@ -5,7 +5,7 @@ date:       2019-03-18 03:21:21 +0000
 permalink:  the_cli_project_journey
 ---
 
-
+**CLI Project Journey**
 Learning on the Online Part-Time Flatiron Software Engineering program has been such a wonderful journey only two months in. After learning Procedural and Object Oriented Ruby, we were able to use what we have learned to create our first program.  The applicable possibilities were endless but what to choose and how to choose were on the table.
 
 The CLI Project requires scrapping a website to obtain data that would be accessible via a Command Line Interface (CLI). The CLI is a way of communicating with our program via text. I guess one can think of CLI as texting with our computer. Our CLI program texts messages to us and we text messages back. No emojies though :-) 
