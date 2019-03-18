@@ -64,7 +64,7 @@ But because I built my code with adaptability, I was able to switch and navigate
 
 2nd - I tried to ensure that each function was separated. I didn't realize how important this was until I had to change things around. Anyhow, for example in my scrapper.rb, I created a separate method for getting the website page into Nokogiri HTML, a separate method for getting the recipes html array. Then I scrapped the recipes in another method while adding them to my recipe class. After receiving the recipe titles, descriptions, and links, I used the links of each recipe to scrap the ingredients and directions in yet another method. I found that this made it very simple to see what was going on and how it was being scrapped.
 
-SCRAPPING
+**SCRAPPING**
 Besides for the learn lessons, this was also helpful: http://ruby.bastardsbook.com/chapters/html-parsing/
 Scrapping really needs to be learned by just doing it. 
 I recommend doing some Nokogiri chopping on your website, storing it in a variable, and adding a 'pry' to play around with. 
