@@ -253,4 +253,75 @@ https://github.com/NYHolzer/sinatra-ar-crud-lab-online-web-pt-011419
 
 > How did you add search capabilities to your app?
 
+In my books model, I added the following code: 
+```
+    def self.search(search)
+        where('title like :pat or description like :pat', :pat => "%#{search}%")
+    end
+```
+
+This is a SQLite query to search. `title` and `description` are two of the columns headers that I wanted to search in. `:pat` is a key that will be directed to search terms. 
+
+I added the following to the views that I wanted to have search functionality. For me, the "books/index.html.erb" seemed the best place: 
+```
+<form action="/books/search" method="POST">
+    <input type="text" name="search">
+    <input type="submit" value="Search">
+</form>
+```
+
+In my BooksController, I created a POST method for the search capabilities: 
+```
+    post "/books/search" do 
+        @books = Book.all 
+        @user = current_user
+        if params[:search]
+            @books = Book.search(params[:search])
+        else  
+            @books = Book.all
+        end
+        erb :"books/results.html"
+    end
+```
+
+I had saved the search terms with a `name = "search"` so it we can access it in params. Then we say that if params[:search] has a value, then return all the books that return from our search query with those name.
+
+I then created a results erb page:
+```
+<% if @books.present? %>
+<table>
+<td>Book Title</td><td>Description</td>
+<% @books.each do |book| %>
+    <%if @user.id == book.user_id%>
+    <tr><td><a href="/books/<%= book.id %>"><%= book.title %></a> </td>
+    <td><%= book.description %></td>
+    <%end%>
+<% end %>
+<% else %>
+<p>There are no Books containing the term(s): <%= params[:search] %>.</p>
+<% end %>
+</table>
+```
+
+It presents the result in a table. However, if there are no results for the user, then it will show that no Books containing the term(s) exist. 
+
+This is a partial understanding of this search functionality that I was able to get working from a stack overflow: 
+https://stackoverflow.com/questions/33161735/basic-search-in-ruby-sinatra-activerecord
+
+> Any tips for this project? 
+I highly recommend going slow. Test everything as you go. 
+This will save you lots of time when you start coding the rest.
+
+After you create a migration, go into rake console to test that its working properly. Try to instantiate the model. Does it connect properly with any associations that you have made with it? 
+After you create a GET or POST, test it. See if it works. -- Don't code out the whole erb file. Just type in a `<h1>Test Header</h1>` - Make sure its showing up.
+
+Once you know everything is connected correctly then you play around with the code within your erb file. Sometimes if you copied code from a different file, you may have left some there. 
+
+Slow and steady wins the race. 
+
+Hope some of this was helpful!
+
+
+
+
 
