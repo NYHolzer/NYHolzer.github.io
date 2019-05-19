@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "MVC CRUD Application - Books Catalog"
-date:       2019-05-19 13:16:05 +0000
+date:       2019-05-19 09:16:06 -0400
 permalink:  mvc_crud_application_-_books_catalog
 ---
 
