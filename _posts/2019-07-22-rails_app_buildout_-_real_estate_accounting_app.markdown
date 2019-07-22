@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails App Buildout - Real Estate Accounting App"
-date:       2019-07-22 04:24:34 +0000
+date:       2019-07-22 00:24:35 -0400
 permalink:  rails_app_buildout_-_real_estate_accounting_app
 ---
 
