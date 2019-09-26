@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Adding JavaScript to Your Rails App"
-date:       2019-09-26 14:21:36 +0000
+date:       2019-09-26 10:21:38 -0400
 permalink:  adding_javascript_to_your_rails_app
 ---
 
