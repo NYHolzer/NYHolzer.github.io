@@ -254,3 +254,5 @@ Every fintech company does it, and every company struggles with it.
 - Clean Python architecture
 - Testable, extensible design
 - AI-assisted but human-driven engineering
+
+{% include build-log-footer.html %}

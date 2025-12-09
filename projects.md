@@ -6,141 +6,171 @@ permalink: /projects/
 
 # 🛠️ Projects
 
-A curated selection of the tools, platforms, and experiments I’ve built — blending **fintech operations**, **data automation**, and **AI-assisted development**.
+I’m not an engineer — I’m an **operations leader who likes technology**  
+and uses **AI-assisted coding** to build tools that solve real-world problems.
 
-These are real, evolving projects that reflect how I think, how I build, and how I approach solving operational problems with code.
-
----
-
-## 🧮 FinOps Recon (Private)
-
-**What it is**  
-A reconciliation engine for comparing transactions across **banks**, **custodians**, and **internal ledgers**. Designed to surface breaks, mismatches, and exceptions automatically.
-
-**Highlights**
-- Schema + data model for multi-source transaction ingestion  
-- Pandas-powered matching logic  
-- API endpoints for running recon jobs (FastAPI-style design)  
-- Built specifically for real fintech ops workflows  
-- Focus on auditability, reliability, and simple deployment  
-
-**Why it matters**  
-Reconciliations are the beating heart of fintech operations.  
-This project demonstrates experience with:
-
-- Financial data pipelines  
-- Break detection logic  
-- Ledger consistency issues  
-- Exception workflows  
-- Ops automation  
-
-**Tech**  
-Python · Pandas · FastAPI (conceptual) · SQLite  
-
-**Links**  
-- Repo: Private (available upon request)  
-- Build Log: *(Coming soon)*
+These projects represent how I think, how I build, and how I bring value through  
+**fintech domain expertise + automation + practical problem solving**.
 
 ---
 
-## ⚙️ FinOps Platform (Public)
-**Repo:** https://github.com/NYHolzer/finops-platform
+<style>
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.25rem 1.4rem;
+  background: #fafafa;
+}
+.project-card h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+.project-card p {
+  margin-bottom: 0.7rem;
+}
+.project-links a {
+  margin-right: 0.75rem;
+}
+</style>
 
-A **public fintech automation lab** where I’m building modular components for:
+<div class="project-grid">
 
-- AI-driven financial operations  
-- Data enrichment  
-- Trade analysis  
-- Workflow automation  
-- Reconciliation extension modules  
+<!-- ========================= -->
+<!-- FinOps Recon -->
+<!-- ========================= -->
 
-**Highlights**
-- Built in public  
-- Experiments with AI analysts & automation flows  
-- Modular, extensible Python architecture  
-- Real operator thinking translated into code  
-- Shows how I merge domain expertise with engineering  
+<div class="project-card">
+<h2>🧮 FinOps Recon (Private)</h2>
 
-**Why it matters**  
-This project signals that I don’t just code —  
-I build tools **for real problems that operators face**.
+<p><strong>What it is:</strong><br>
+A reconciliation engine comparing transactions across <strong>banks</strong>, <strong>custodians</strong>, and <strong>internal ledgers</strong>. Designed for real fintech ops workflows.</p>
 
-**Tech**  
-Python · Modular architecture · AI integration patterns  
+<p><strong>Highlights:</strong></p>
+<ul>
+  <li>Schema + data model for multi-source transaction ingestion</li>
+  <li>Pandas-powered matching logic</li>
+  <li>API-style architecture for recon jobs</li>
+  <li>Designed with auditability and operational reality in mind</li>
+</ul>
+
+<p><strong>Why it matters:</strong><br>
+Reconciliations are the heartbeat of fintech ops. This tool reflects knowledge of financial pipelines, exception workflows, and ledger consistency.</p>
+
+<p><strong>Tech:</strong> Python · Pandas · SQLite · FastAPI-style design</p>
+
+<div class="project-links">
+  <a href="#">Repo: Private (available upon request)</a>
+  <a href="/2025/10/05/finops-recon-build-log.html">Build Log</a>
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- FinOps Platform -->
+<!-- ========================= -->
+
+<div class="project-card">
+<h2>⚙️ FinOps Platform (Public)</h2>
+
+<p>A public fintech automation lab exploring:</p>
+<ul>
+  <li>AI-driven analysis and workflows</li>
+  <li>SEC/EDGAR data parsing</li>
+  <li>Data enrichment and trade analysis</li>
+  <li>Reconciliation extension modules</li>
+</ul>
+
+<p><strong>Why it matters:</strong><br>
+Shows how I take operator-first thinking and translate it into modular, testable automation.</p>
+
+<p><strong>Tech:</strong> Python · Modular Architecture · AI Patterns</p>
+
+<div class="project-links">
+  <a href="https://github.com/NYHolzer/finops-platform">GitHub Repo</a>
+  <a href="/2025/10/01/finops-platform-build-log.html">Build Log</a>
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Torah Layout Studio -->
+<!-- ========================= -->
+
+<div class="project-card">
+<h2>🕍 Torah Layout Studio (Public)</h2>
+
+<p>A TypeScript/React experiment in structuring and rendering Torah text, commentaries, and translations — inspired by challenges creating:</p>
+
+<ul>
+  <li>Sefarim</li>
+  <li>Divrei Torah</li>
+  <li>Daf Yomi handouts</li>
+  <li>Learning sheets</li>
+</ul>
+
+<p><strong>Highlights:</strong> Structured-text modeling, layout concepts, React component workflows.</p>
+
+<p><strong>Tech:</strong> TypeScript · React</p>
+
+<div class="project-links">
+  <a href="https://github.com/NYHolzer/torah-layout-studio">GitHub Repo</a>
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Local Transcriber -->
+<!-- ========================= -->
+
+<div class="project-card">
+<h2>🎙️ Local Audio/Video Transcriber</h2>
+
+<p>A Python + PySide6 desktop app that transcribes audio/video <strong>fully offline</strong> using faster-whisper.</p>
+
+<ul>
+  <li>Edit segments inline</li>
+  <li>Jump to timestamps</li>
+  <li>Export .txt and .srt files</li>
+</ul>
+
+<p><strong>Tech:</strong> Python · PySide6 · FFmpeg · faster-whisper</p>
+
+<div class="project-links">
+  <a href="https://github.com/nyholzer/local-transcriber">GitHub Repo</a>
+  <a href="/2025/12/08/local-transcriber-build-log.html">Build Log</a>
+</div>
+</div>
+
+</div> <!-- END GRID -->
 
 ---
 
-## 🕍 Torah Layout Studio (Public)
-**Repo:** https://github.com/NYHolzer/torah-layout-studio
+# ⚡ Additional Experiments & Utilities
 
-A TypeScript/React experiment exploring how to **structure, render, and typeset Torah text**, commentaries, and translations.
+These smaller tools show how I rapidly build useful utilities during real work:
 
-Inspired by challenges in producing:
-
-- Sefarim  
-- Divrei Torah  
-- Daf Yomi handouts  
-- Learning sheets  
-- The Yeshuas Nissan Haggadah  
-
-**Highlights**
-- Rich-text + structured-text thinking  
-- Layout engine prototypes  
-- UI concepts for visualizing aligned Hebrew + English  
-- React component architecture  
-- A genuinely unique niche project  
-- Demonstrates both creativity and engineering  
-
-**Why it matters**  
-Shows ability to think beyond fintech:  
-tooling, design, UX, structured content modeling.
-
-**Tech**  
-TypeScript · React  
-
----
-
-## ⚡ Additional Experiments & Utilities
-
-These smaller tools reflect how I rapidly build helpful utilities during my work:
-
-### 🎙️ Local Audio Transcriber
-A script/app that converts learned audio (shiurim, divrei Torah, etc.) into usable text via local transcription.
-
-- Shows practical coding  
-- Workflow automation  
-- Supports real creative output  
-- Python-based tool  
-
-*(Repo coming soon — built locally)*
+### 🎙️ Local Audio Transcriber (Script Version)
+Before the desktop app, a local script I used for transcribing shiurim and divrei Torah.
 
 ### 📰 PDF / Newspaper Splitter Tool
-Utility for splitting or extracting sections from large PDFs (e.g., historical documents from the shechita legislation archive).
-
-- Python + PDF processing  
-- Solves real research workflow pain  
-
-*(Repo coming soon — built locally)*
+Utility for extracting sections from historical PDFs — built because research workflows are… messy.
 
 ### 📊 CSV Cleanup & Data Helpers
-Small Python utilities for:
-
-- Standardizing column names  
-- Normalizing dates + amounts  
-- Cleaning exports from banks, CRMs, or custodians  
-
-*(Often used inside finops tooling; grouped here)*
+Little Python helpers for date normalization, column standardization, and export cleanup from banks/CRMs/custodians.
 
 ---
 
 # 🧭 Build Philosophy
 
-Across these projects, my goals are consistent:
+Across everything I build, my goals remain the same:
 
 - **Reduce operational friction**  
 - **Automate repetitive workflows**  
 - **Create clarity in messy data**  
-- **Use AI as a force multiplier, not a replacement**  
-- **Ship fast, iterate intentionally**  
+- **Use AI as a force multiplier**  
+- **Ship fast and iterate intentionally**  
 
-If you'd like to understand how I build or see a walkthrough of any project, check my **[Build Logs](../build-logs/)** or reach out on **LinkedIn**.
+For deeper dives, check out my **[Build Logs](/build-logs/)**.

@@ -79,3 +79,5 @@ When you open a video, the app:
 If you'd like to try it or see how it works under the hood, here’s the repo again:
 
 👉 **https://github.com/nyholzer/local-transcriber**
+
+{% include build-log-footer.html %}

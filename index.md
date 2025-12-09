@@ -12,7 +12,7 @@ title: "Nissan Holzer – Build Lab"
 <h1 align="center">Nissan Holzer – Build Lab</h1>
 
 <p align="center">
-  <em>Fintech &amp; operations leader building practical tools with code + AI.</em>
+  <em>Fintech &amp; operations leader — not a software engineer, just someone who loves technology and uses AI to build things that solve real problems.</em>
 </p>
 
 ---

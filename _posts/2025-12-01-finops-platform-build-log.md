@@ -240,3 +240,5 @@ Planned enhancements:
 - Potential integrations with other finops tools
 
 For now, `finops-platform` remains a public playground for experimenting with **Python, data workflows, and AI-assisted fintech tooling**.
+
+{% include build-log-footer.html %}
