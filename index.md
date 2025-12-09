@@ -3,7 +3,9 @@ layout: home
 title: "Nissan Holzer – Build Lab"
 ---
 
-<div class="hero">
+<p align="center">
+  <img src="/assets/img/nyh-logo.png" alt="NYH logo" style="max-width:180px;border-radius:9999px;box-shadow:0 0 30px rgba(56,189,248,0.6);" />
+</p>
 
 # 👋 Hi, I’m Nissan
 
@@ -17,16 +19,5 @@ This is my **Build Lab** — a curated collection of projects and experiments bu
 - 🤖 ChatGPT as a pair programmer and design partner  
 - 🕍 Publishing & learning tools for Torah and structured text  
 
-<div class="hero-badges">
-  <span class="hero-badge">Fintech Ops</span>
-  <span class="hero-badge">Reconciliations</span>
-  <span class="hero-badge">AI-Assisted Dev</span>
-  <span class="hero-badge">Internal Tools</span>
-</div>
-
-<div class="hero-actions">
-  <a class="hero-btn hero-btn-primary" href="/projects/">View Projects</a>
-  <a class="hero-btn hero-btn-secondary" href="/build-logs/">Browse Build Logs</a>
-</div>
-
-</div>
+👉 Start with **[Projects](/projects/)** to see the highlights.  
+👉 Or explore **[Build Logs](/build-logs/)** to see *how* I think and build.
