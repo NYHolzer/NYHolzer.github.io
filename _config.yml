@@ -1,0 +1,18 @@
+title: "Nissan Holzer – Build Lab"
+description: "Fintech, operations, and AI-assisted coding projects."
+theme: minima
+
+author:
+  name: "Nissan Holzer"
+  email: "nissan.holzer@gmail.com"
+
+minima:
+  social_links:
+    - { platform: github,   user_url: "https://github.com/NYHolzer" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/nissan-holzer/" }
+
+# Pages that should appear in the header nav
+header_pages:
+  - projects.md
+  - build-logs.md
+  - about.md
